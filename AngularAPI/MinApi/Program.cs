@@ -1,7 +1,6 @@
 using MinApi;
 using MinApi.person;
 using MinApi.spider;
-using Microsoft.AspNetCore.Http;
 
 const string CorsAllowAllTheThings = "_allowAllTheThings";
 
