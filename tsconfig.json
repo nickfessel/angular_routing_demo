@@ -14,8 +14,10 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "module": "es2020",
+    "typeRoots": ["src/@types", "node_modules/@types","node_modules/@types/node"],
     "lib": [
       "es2018",
       "dom"
