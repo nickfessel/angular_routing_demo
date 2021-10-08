@@ -17,14 +17,14 @@ export class SpiderDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    this.showSpider();
+    this.getSpider();
   }
   
   backToSpiders() {
     this.router.navigate(['/spiders']);
   }
 
-  showSpider() {
+  getSpider() {
     this.spiderService.getSpider(this.id)
       .subscribe(
         (data: Spider) => {

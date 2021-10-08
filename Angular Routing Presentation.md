@@ -11,13 +11,13 @@
 
 - Import `RouterModule`, which contains the logic for routing.
 - Configure `RouterModule` from within the app-routing.module.ts file.
-(see app-routing.module.ts)
+(see src/app/app-routing.module.ts)
 
 ## How do I include the router in my web application template?
 
 - Use the `<router-outlet>` element. Typically this element would be implemented in the app.component.html file.
 - The components will load into the `<router-outlet>` section when the router navigates.
-- (see app.component.html)
+- (see src/app/app.component.html)
 
 ## How do I use the router to navigate?
  
@@ -29,7 +29,7 @@
     <a class="button" routerLink="/people">People</a>
   </nav>
   ```
-- (see app.component.html)
+- (see src/app/app.component.html)
 
 ## How do I highlight the current route?
  
@@ -42,22 +42,31 @@
     <a class="button" routerLink="/people" routerLinkActive="activebutton">People</a>
 </nav>	
 ```
-- (see app.component.html)
+- (see src/app/app.component.html)
 
 ## How can I use the router to redirect users?
  
 - Use the `redirectTo` option in the RouterModule configuration.
-- (see app-routing.module.ts)
+- (see src/app/app-routing.module.ts)
 
 ## How do I redirect users to an error page when they select an invalid route?
  
 - If a user navigates to a route that does not exist, you can redirect them to a "404 page" by using the `**` wildcard in the `RouterModule` configuration.
-- (see app-routing.module.ts)
+- (see src/app/app-routing.module.ts)
 
 ## How do I programmatically navigate and pass parameters to specific routes?
 
 - Use the `ActivatedRoute` object of the `RouterModule`.
 - (see src/app/spider-detail/spider-detail.component.ts)
+
+# Questions?
+
+## Some other Angular 12 stuff we can discuss if there is extra time
+- Commenting the code (see src/app/shared/tabulator.service.ts)
+- Dependency-injection (see constructor in src/app/spider-detail/spider-detail.component.ts)
+- `ng test` command
+- Type safety (TypeScript) (rename variables and functions and see what happens)
+- CSS scoping
 
 ## Resources
 
