@@ -62,3 +62,4 @@
 ## Resources
 
 - Angular Routing tutorial: https://angular.io/guide/router-tutorial
+- Angular development environment setup: https://angular.io/guide/setup-local
