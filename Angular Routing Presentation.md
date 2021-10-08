@@ -80,3 +80,6 @@
 
 - Angular routing tutorial: https://angular.io/guide/router-tutorial
 - Angular development environment setup: https://angular.io/guide/setup-local
+- Link to this demo project: https://github.com/nickfessel/angular_routing_demo/tree/develop
+
+#### All written content and spider images come from Wikipedia.org.
