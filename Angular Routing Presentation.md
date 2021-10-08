@@ -1,3 +1,11 @@
+## Demo
+
+- The app demonstrates the implementation of some basic Angular routing concepts. 
+- The app is written using Angular 12. 
+- The app contains test scripts that can be run from the command line using `ng test`.
+- The data shown in the demo tables is loaded by using Angular's RxJs module to call a minimal API. The minimal API is written in .Net 6 using Visual Studio 2022 Version 17.0.0 Preview 4.1.
+- Tabulator is used to generate the tables.
+
 ## What is Angular routing?
 
 - Angular routing allows users of your Angular web application to navigate to particular locations in your application by changing the URL. 
@@ -5,21 +13,21 @@
 ## What are some benefits of using routing?
 
 - No "broken" back/forward buttons. The user can navigate from one view of the app to another view of the app by using the browser's back/forward buttons.
-- Users can "bookmark" the route urls. For example, the user might want to run a report that contains a specific date and other configurations. The user could bookmark that url and then when they log in to the application, they can run that url.
+- Users can "bookmark" the route urls. For example, the user might want to run a report that contains a specific date and other configurations. The user could bookmark and then run that url without having to configure any settings besides logging in to the application.
 
 ## What module(s) do I need to be able to implement routing in Angular?
 
 - Import `RouterModule`, which contains the logic for routing.
 - Configure `RouterModule` from within the app-routing.module.ts file.
-(see src/app/app-routing.module.ts)
+- (see src/app/app-routing.module.ts)
 
 ## How do I include the router in my web application template?
 
-- Use the `<router-outlet>` element. Typically this element would be implemented in the app.component.html file.
+- Use the `<router-outlet>` element. This element can be implemented in the app.component.html file.
 - The components will load into the `<router-outlet>` section when the router navigates.
 - (see src/app/app.component.html)
 
-## How do I use the router to navigate?
+## How do I use the router to navigate from html?
  
 - Use the `routerLink` attribute on html tags to link the tag to a route.
 - Example:
@@ -42,7 +50,7 @@
     <a class="button" routerLink="/people" routerLinkActive="activebutton">People</a>
 </nav>	
 ```
-- (see src/app/app.component.html)
+- (see src/app/app.component.html and src/app/app.component.css)
 
 ## How can I use the router to redirect users?
  
@@ -56,7 +64,7 @@
 
 ## How do I programmatically navigate and pass parameters to specific routes?
 
-- Use the `ActivatedRoute` object of the `RouterModule`.
+- Use the `ActivatedRoute` object of the router module.
 - (see src/app/spider-detail/spider-detail.component.ts)
 
 # Questions?
@@ -70,5 +78,5 @@
 
 ## Resources
 
-- Angular Routing tutorial: https://angular.io/guide/router-tutorial
+- Angular routing tutorial: https://angular.io/guide/router-tutorial
 - Angular development environment setup: https://angular.io/guide/setup-local
