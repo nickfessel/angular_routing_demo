@@ -6,7 +6,7 @@ export class TabulatorService {
     tabulatorDiv = document.createElement('div');
     columns: any;
 
-    /** Configures the columns for the Tabulator table based on a data row from the data array, keys to ignore, and the desired column width. */
+    /** Configures the columns for the Tabulator table based on: a data row from the data array, keys to ignore, and the desired column width. */
     private setUpColumns(dataRow: any, keysToIgnore: Array<string>, columnWidth: string) {          
         /** Set up the columns based on the fields in one of the rows from the data object. */
         for (const [key] of Object.entries(dataRow)) {

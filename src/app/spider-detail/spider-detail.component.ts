@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Spider, SpiderService } from '../spider/spider.service';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-spider-detail',
@@ -16,9 +16,7 @@ export class SpiderDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private spiderService: SpiderService, private router: Router) {}
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get('id')
-    // get the spider details.
-
+    this.id = this.route.snapshot.paramMap.get('id');
     this.showSpider();
   }
   
