@@ -57,4 +57,4 @@ How do I redirect users to an error page when they select an invalid route?
  How do I programmatically navigate and pass parameters to specific routes?
 
 	- Use the ActivatedRoute object of the RouterModule.
-(see spider-detail/spider-detail.component.ts)
+(see src/app/spider-detail/spider-detail.component.ts)
