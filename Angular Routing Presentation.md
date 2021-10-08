@@ -4,7 +4,7 @@
 - The app is written using Angular 12. 
 - The app contains test scripts that can be run from the command line using `ng test`.
 - The data shown in the demo tables is loaded by using Angular's RxJs module to call a minimal API. The minimal API is written in .Net 6 using Visual Studio 2022 Version 17.0.0 Preview 4.1.
-- Tabulator is used to generate the tables.
+- Tabulator version 4.9.3 is used to generate the tables.
 
 ## What is Angular routing?
 
