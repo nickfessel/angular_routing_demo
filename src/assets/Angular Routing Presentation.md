@@ -1,3 +1,7 @@
+
+# Angular Routing
+![Angular Routing](router.jpg)
+(image from https://www.infinitytools.com/blog/2016/05/25/how-to-cut-miter-joints-at-the-router-table/)
 ## Demo
 
 - The app demonstrates the implementation of some basic Angular routing concepts. 
@@ -14,6 +18,11 @@
 
 - No "broken" back/forward buttons. The user can navigate from one view of the app to another view of the app by using the browser's back/forward buttons.
 - Users can "bookmark" the route urls. For example, the user might want to run a report that contains a specific date and other configurations. The user could bookmark and then run that url without having to configure any settings besides logging in to the application.
+
+## But isn't this just doing a full "page reload"?
+
+- No. When using the `<router-outlet>` and Angular's routing capabilities, Angular will replace the content of the `<router-outlet>` without resulting in a page reload.
+- (open Chrome DevTools and watch the Network tab - the only traffic occurring is the calls to the minimal API and the calls to get the spider images. Click the refresh button on the browser tab to do a complete reload for comparison)
 
 ## What module(s) do I need to be able to implement routing in Angular?
 
