@@ -20,7 +20,7 @@ export class SpiderDetailComponent implements OnInit {
     this.showSpider();
   }
   
-  back() {
+  backToSpiders() {
     this.router.navigate(['/spiders']);
   }
 
