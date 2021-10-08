@@ -1,7 +1,8 @@
 
-# Angular Routing
+# _Angular 12 Routing_
 ![Angular Routing](router.jpg)
 (image from https://www.infinitytools.com/blog/2016/05/25/how-to-cut-miter-joints-at-the-router-table/)
+
 ## Demo
 
 - The app demonstrates the implementation of some basic Angular routing concepts. 
@@ -90,5 +91,7 @@
 - Angular routing tutorial: https://angular.io/guide/router-tutorial
 - Angular development environment setup: https://angular.io/guide/setup-local
 - Link to this demo project: https://github.com/nickfessel/angular_routing_demo/tree/develop
+
+![node modules](node_modules.jpg)
 
 #### All written content and spider images come from Wikipedia.org.

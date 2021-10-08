@@ -9,9 +9,8 @@ const routes: Routes = [
   { path: 'people', component: PersonComponent},
   { path: 'spiders', component: SpiderComponent },
   { path: '', redirectTo: '/spiders', pathMatch: 'full'},
-  // Hey Angular gurus, why doesn't this PageNotFoundComponent work when I have 'spiderdetail/:id' configured?
-  //{ path: '**', component: PageNotFoundComponent}, // this no longer works
   { path: 'spiderdetail/:id', component: SpiderDetailComponent },
+  { path: '**', component: PageNotFoundComponent}, 
 ];
 
 @NgModule({
